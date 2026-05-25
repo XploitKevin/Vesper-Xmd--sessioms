@@ -15,12 +15,30 @@
       background-image: url("https://i.ibb.co/pBbsqnJf/ac09079ffdcb.jpg");
       background-size: cover;
       background-position: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    /* Logo container */
+    .logo-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .logo-img {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      border-radius: 50%;
+      border: 3px solid #1a6fd4;
+      padding: 5px;
+      background: rgba(0,0,0,0.6);
+      box-shadow: 0 0 20px rgba(26,111,212,0.5);
     }
 
     .btn {
       --color: #e5f5f1;
       --color2: rgb(0, 0, 0);
-      width: 200px;
+      width: 220px;
       padding: 0.8em 1.75em;
       background-color: #1a6fd4;
       border-radius: 6px;
@@ -36,6 +54,8 @@
       text-transform: uppercase;
       color: var(--color);
       margin-bottom: 24px;
+      display: block;
+      text-align: center;
     }
 
     .btn::after, .btn::before {
@@ -78,10 +98,13 @@
 </head>
 <body>
 
+  <div class="logo-container">
+    <img class="logo-img" src="https://files.catbox.moe/atfp7w.jpg" alt="Vesper Logo" onerror="this.style.display='none'">
+  </div>
+
   <button onclick="window.open(`/pair`)" class="btn">PAIR CODE</button>
   <button onclick="window.open(`/qr`)" class="btn">QR SCAN</button>
   <button onclick="window.open(`https://github.com/Kevintech-hub/Vesper-Xmd/fork`)" class="btn">REPO FORK</button>
-
 
 </body>
 </html>
