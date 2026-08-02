@@ -3,10 +3,6 @@
     "description": "Vesper-Xmd WhatsApp session generator",
     "version": "1.0.0",
     "main": "./index.js",
-  "engines" : { 
-    "npm" : ">=9.7.2",
-    "node" : ">=20.0.0"
-    },
     "scripts": {
     "start": "node index.js"
   },
